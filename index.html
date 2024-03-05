@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Playfair+Display:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Include Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/104cd21b31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/css/style.css" />
+
+<!-- Include Swiper JS -->
+
+    <title>Juel</title>
+  </head>
+  <body>
+    <main class="main">
+
+      <!--LEFT MENU FIXED-->
+      <div class="section-counter">
+        <a href="#intro" class="counter-number">
+          <h4 class="number">01</h4>
+          <h4 class="section-name">
+            Начало
+          </h4>
+        </a>
+        <a href="#new-products" class="counter-number">
+          <h4 class="number">02</h4>
+          <h4 class="section-name">
+            Нови Продукти
+          </h4>
+        </a>
+        <a href="#featured-products" class="counter-number">
+          <h4 class="number">03</h4>
+          <h4 class="section-name">
+            Подбрани Продукти
+          </h4>
+        </a>
+      </div>
+
+
+
+
+
+
+      <!--HEADER-->
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-inner">
+            <div class="header-inner-top">
+              <div class="header-telephone">
+                <a
+                  class="header-top-link font-philosopher"
+                  href="tel:+0888123456"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  088-123-456
+                </a>
+              </div>
+              <div class="header-offer">
+                <p class="font-philosopher">
+                  Безплатна доставка за поръчки над 100лв!
+                </p>
+              </div>
+              <div class="header-icons">
+                <ul class="icons-list">
+                  <li class="icon-holder">
+                    <a href="#" class="icon header-top-link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </li>
+                  <li class="icon-holder">
+                    <a href="#" class="icon header-top-link">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                  </li>
+                  <li class="icon-holder">
+                    <a href="#" class="icon header-top-link">
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="header-inner-bottom font-philosopher">
+              <div class="logo">
+                <a href="#">
+                  <img src="./resources/images/logo.png" alt="Logo" />
+                </a>
+              </div>
+              <div id="burger" class="burger" onclick="toggleMenu()">
+                <span class="burger-top-line"></span>
+                <span class="burger-bottom-line"></span>
+              </div>
+              <nav id="nav" class="nav">
+                <ul class="nav-links">
+                  <li class="nav-link-holder">
+                    <a class="nav-link" href="#">начало</a>
+                  </li>
+                  <li class="nav-link-holder drop-down-wrapper">
+                    <a class="nav-link" href="#">Часовници</a>
+                    <ul class="nav-links-drop-down">
+                      <li class="drawer-item">
+                        <a class="nav-link" href="#"
+                          >Мъжки<br />
+                          Часовници</a
+                        >
+                      </li>
+                      <li class="drawer-item">
+                        <a class="nav-link" href="#"
+                          >Женски<br />
+                          Часовници</a
+                        >
+                      </li>
+                      <li class="drawer-item">
+                        <a class="nav-link" href="#"
+                          >Универсални<br />
+                          Часовници</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-link-holder">
+                    <a class="nav-link" href="#">бижута</a>
+                  </li>
+                  <li class="nav-link-holder">
+                    <a class="nav-link" href="#">парфюми</a>
+                  </li>
+                  <li class="nav-link-holder">
+                    <a class="nav-link" href="#">промоции</a>
+                  </li>
+                  <li class="nav-link-holder">
+                    <a class="nav-link" href="#">за контакт</a>
+                  </li>
+                  <li class="nav-link-holder">
+                    <a class="nav-link" href="#">начало</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+
+
+
+
+
+
+
+      <!--INTRO-->
+
+      
+      <section id="intro" class="intro">
+          <!--SWIPER INIT-->
+          <div class="swiper intro-swiper">
+            <div class="swiper-wrapper">
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="intro-inner">
+                      <div class="wrapper">
+                        <div class="welcome">
+                          <div class="welcome-inner-top">
+                            <div class="line"></div>
+                            <p class="font-philosopher"> начало</p>
+                         </div>
+                         <h1>Добре дошли в Juel.bg</h1>
+                         <div class="welcome-inner-bottom">
+                           <a href="#new-products" class="font-philosopher">към продуктите</a>
+                           <div class="line"><div class="line-arrow">></div></div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="intro-inner">
+                      <div class="wrapper">
+                        <div class="welcome">
+                          <div class="welcome-inner-top">
+                            <div class="line"></div>
+                            <p class="font-philosopher"> начало</p>
+                         </div>
+                         <h1>Добре дошли в Juel.bg</h1>
+                         <div class="welcome-inner-bottom">
+                           <a href="#new-products" class="font-philosopher">към продуктите</a>
+                           <div class="line"><div class="line-arrow">></div></div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <!-- PAGINATION -->
+                <div class="swiper-pagination intro-swiper-pagination"></div>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#new-products" class="page-down">
+          <div class="page-down-figures">
+            <div class="page-down-line"></div>
+            <div class="page-down-cirle"></div>
+            <div class="page-down-dot"></div>
+          </div>
+          <div>
+            <p class="page-scroll-down-text">надолу</p>
+          </div>
+        </a>
+      </section>
+
+
+
+
+
+
+
+
+
+
+     
+<!--NEW PRODUCTS-->
+      <section id="new-products" class="new-products">
+        <div class="wrapper">
+          <h2>Нашите нови продукти</h2>
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/perfume.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                      
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Narciso Rodriguez Blue Noir - Парфюм</a></div>
+                    <div class="product-price"><h4>100.00 лв</h4></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/Watch.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Guardo 111463-5 - Часовник</a></div>
+                    <div class="product-price"><h4>120.00 лв</h4></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/package.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Комплект Симфони Лукс Голд - Комплект</a></div>
+                    <div class="product-price"><h4>50.00 лв</h4></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/earring.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                      
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Лизбет аметист - Обеци</a></div>
+                    <div class="product-price"><h4>30.00 лв</h4></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/perfume.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                      
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Narciso Rodriguez Blue Noir - Парфюм</a></div>
+                    <div class="product-price"><h4>100.00 лв</h4></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/Watch.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                      
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Guardo 111463-5 - Часовник</a></div>
+                    <div class="product-price"><h4>120.00 лв</h4></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/package.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                      
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Комплект Симфони Лукс Голд - Комплект</a></div>
+                    <div class="product-price"><h4>50.00 лв</h4></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <img src="./resources/images/earring.png"/>
+                    <a href="#" class="on-item-hover">
+                      <div class="hover-line"></div>
+                      
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-title"><a href="#">Лизбет аметист - Обеци</a></div>
+                    <div class="product-price"><h4>30.00 лв</h4></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidescroll-wrapper">
+            <div class="swiper-pagination product-swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      
+
+      <!--FEATURED PRODUCTS-->
+
+
+      <section id="featured-products" class="featured-products">
+        <div class="wrapper">
+          <h2>Подбрана Колекция</h2>
+        </div>
+        <div class="featured-background-top">
+          <img src="./resources/images/pete-bellis.png">
+        </div>
+        <div class="featured-background-bottom">
+          <img src="./resources/images/pete-bellis2.png">
+          <img src="./resources/images/backgorund-ring.png">
+        </div>
+        <div class="featured-items">
+          <div class="featured-item">
+            <div class="featured-item-image">
+              <img src="./resources/images/featured-perfume.png">
+            </div>
+            <div class="featured-item-info">
+              <h4 class="font-philosopher">Spicebomb Extreme - Парфюм</h4>
+              <h4 class="font-philosopher">120.00 лв</h4>
+            </div>
+            <a href="#" class="on-item-hover">
+              <div class="hover-line"></div>
+              
+            </a>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-item-image">
+              <img src="./resources/images/featured-watch.png">
+            </div>
+            <div class="featured-item-info">
+              <h4 class="font-philosopher">Guardo 10388-5 - Часовник</h4>
+              <h4 class="font-philosopher">120.00 лв</h4>
+            </div>
+            <a href="#" class="on-item-hover">
+              <div class="hover-line"></div>
+              
+            </a>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-item-image">
+              <img src="./resources/images/featured-earrings.png">
+            </div>
+            <div class="featured-item-info">
+              <h4 class="font-philosopher">Обеци Хелиос</h4>
+              <h4 class="font-philosopher">60.00 лв</h4>
+            </div>
+            <a href="#" class="on-item-hover">
+              <div class="hover-line"></div>
+              
+            </a>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-item-image">
+              <img src="./resources/images/featured-bracelet.png">
+            </div>
+            <div class="featured-item-info">
+              <h4 class="font-philosopher">Гривна Симфони Голд</h4>
+              <h4 class="font-philosopher">80.00 лв</h4>
+            </div>
+            <a href="#" class="on-item-hover">
+              <div class="hover-line"></div>
+              
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+     
+
+
+
+ <!--FOOTER-->
+
+
+      <footer class="footer font-philosopher">
+        <div class="wrapper">
+          <div class="footer-inner">
+            <div class="footer-left-side">
+              <div class="bread-crumbs">
+                <a href="#"> за нас</a>
+                <a href="#"> доставка</a>
+                <a href="#"> условия</a>
+              </div>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="copyright">
+                <p>&#169 Всички права запазени 2017.</p>
+              </div>
+            </div>
+            <div class="footer-logo">
+              <a href="#">JUEL</a>
+            </div>
+            <div class="footer-right-side">
+              <h4>Контакти</h4>
+              <a class="header-top-link font-philosopher" href="https://www.google.com/maps/place/ul.+%22Vasil+Levski%22+25,+8000+Burgas+Center,+Burgas/@42.4988255,27.468741,20.5z/data=!4m6!3m5!1s0x40a694be11cddf35:0xb97c3eb8ef6c9481!8m2!3d42.4988154!4d27.4689577!16s%2Fg%2F11l5czp1hw?entry=ttu"> <i class="fa-solid fa-location-dot"></i> гр.Бургас, ул."Васил Левски" №25</a>
+              <a class="header-top-link font-philosopher" href="mailto: office@juel.bg" ><i class="fa-regular fa-envelope"></i> office@juel.bg</a>
+              <a class="header-top-link font-philosopher" href="tel:+0888123456">
+                <i class="fa-solid fa-mobile-screen-button"></i> 088-123-456
+                </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+
+    <script>
+      function toggleMenu() {
+        const burgerAnimation = document.getElementById("burger");
+        const navigation = document.getElementById("nav");
+        burgerAnimation.classList.toggle("clicked");
+        navigation.classList.toggle("opened");
+      }
+    </script>
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script type="text/javascript">
+      var swiper = new Swiper(".intro-swiper", {
+        loop:true,
+      pagination: {
+        el: ".intro-swiper-pagination",
+        type: "bullets",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        },
+      },
+    });
+
+    
+</script>
+
+
+<script type="text/javascript">
+  var swiper2 = new Swiper(".product-swiper",{
+    loop: true,
+    slidesPerView: getInitialSlidesPerView(),
+    spaceBetween: setInitialSpaceBetween(),
+    pagination: {
+      el: ".product-swiper-pagination",
+      type: "progressbar",
+      renderProgressbar: function (progressbarFillClass) {
+        return '<span class="' + progressbarFillClass + '"><span class="progressbar-circle exclude-scale"></span><span class="progressbar-dot exclude-scale"></span></span>';
+      }
+    },
+  });
+
+  //Updating slidesPerView relative to window resize
+  window.addEventListener('resize', function () {
+      swiper2.params.slidesPerView = getInitialSlidesPerView();
+      swiper2.params.spaceBetween = setInitialSpaceBetween();
+      swiper2.update();
+    });
+
+    function setInitialSpaceBetween(){
+      var screenWidth = window.innerWidth;
+      if (screenWidth >= 1280) {
+        return 30; // for larger screens
+      }
+      else if(screenWidth >= 768){
+        return 20;
+      }
+      else if (screenWidth >= 576) {
+        return 15; // for medium screens
+      } else {
+        return 10; // for smaller screens
+      }
+    };
+
+    function getInitialSlidesPerView() {
+      var screenWidth = window.innerWidth;
+
+      if (screenWidth >= 1280) {
+        return 4; // for larger screens
+      }
+      else if(screenWidth >= 768){
+        return 3;
+      }
+      else if (screenWidth >= 576) {
+        return 2.5; // for medium screens
+      } else {
+        return 1.5; // for smaller screens
+      }
+    };
+  </script>
+
+
+    <script src="https://kit.fontawesome.com/104cd21b31.js" crossorigin="anonymous"></script>
+  </body>
+</html>

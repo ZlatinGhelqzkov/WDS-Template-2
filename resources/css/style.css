@@ -1,0 +1,339 @@
+/*#######################
+######## IMPORTS ######
+#######################*/
+
+@import url(./wrapper.css);
+@import url(./header.css);
+@import url(./intro.css);
+@import url(./new-products.css);
+@import url(./featured-products.css);
+@import url(./footer.css);
+
+/*#######################
+######## CSS RESET ######
+#######################*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  color-scheme: dark light;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  overflow-x: hidden;
+  position: relative;
+}
+
+section {
+  position: relative;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  max-width: 335px;
+  font-size: 47px;
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+  -webkit-text-decoration: #e9e9e9 solid underline;
+  text-decoration: #e9e9e9 solid underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1rem;
+}
+
+h4 {
+  display: inline-block;
+  max-width: 200px;
+  font-size: 16px;
+  color: #616262;
+  opacity: 0.8;
+  font-family: "Philosopher", sans-serif;
+}
+
+@media (max-width: 1023px) {
+  h4 {
+    font-size: 12px;
+    text-wrap: nowrap;
+  }
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+.font-philosopher {
+  font-family: "Philosopher", sans-serif;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+/*#######################################
+##### HOVER EFFECT ON ALL PRODUCTS ######
+#########################################*/
+
+.featured-item:hover .on-item-hover,
+.product-image:hover .on-item-hover {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.on-item-hover {
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0%;
+  bottom: 0;
+  opacity: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hover-line {
+  position: relative;
+  width: 50px;
+  transform:translateX(-100%);
+  height: 1px;
+  background: #fff;
+}
+
+.hover-line:after {
+  content: ">";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+  opacity: 1;
+}
+
+.hover-line:before {
+  content: "купи";
+  position: absolute;
+  right: -120%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*#######################
+##### INTRO SWIPER ######
+#######################*/
+
+.intro-swiper {
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+  background: #fff !important;
+  opacity: 0.6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px !important;
+  height: 14px !important;
+  opacity: 1 !important;
+}
+
+/*#######################
+##### PRODUCT SWIPER ####
+#######################*/
+
+.product-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 400px;
+  min-height: auto;
+}
+
+.sidescroll-wrapper {
+  position: relative;
+  padding: 10px 15px;
+}
+
+@media (min-width: 1280px) {
+  .sidescroll-wrapper {
+    padding: 45px 350px 0px 350px;
+  }
+}
+
+.product-swiper-pagination {
+  height: 1px !important;
+  top: auto !important;
+  bottom: 0 !important;
+  max-width: 1200px !important;
+}
+
+.product-swiper-pagination .swiper-pagination-progressbar-fill {
+  background: #000 !important;
+}
+
+.swiper-pagination-progressbar-fill:not(.exclude-scale) {
+  transform: scale(1);
+}
+
+.swiper-pagination-progressbar-fill > .progressbar-dot {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 100px;
+  transform: translate(50%, -50%) scale(1) !important;
+}
+.swiper-pagination-progressbar-fill > .progressbar-circle {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 100px;
+  transform: translate(50%, -50%) scale(1) !important;
+}
+
+/*#######################
+##### LEFT NAV FIXED ###
+#######################*/
+
+.section-counter {
+  position: fixed;
+  top: 50%;
+  max-width: 100px;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 30px 0px;
+  background: rgba(150, 150, 150, 0.8);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+  .section-counter {
+    display: none;
+  }
+}
+
+.counter-number {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.number {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  opacity: 0.3;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.section-name {
+  display: inline-block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Philosopher", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.counter-number:hover .number {
+  mix-blend-mode: invert;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.counter-number:hover .section-name {
+  transform: rotate(90deg);
+  margin-top: 72%;
+  margin-bottom: 30%;
+  animation: word 1s ease-in-out forwards;
+}
+
+@keyframes word {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+
+.counter-number:hover .number:after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  left: 50%;
+  height: 30px;
+  width: 2px;
+  background: #fff;
+  opacity: 0.3;
+}
